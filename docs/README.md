@@ -1,4 +1,4 @@
 mgbBootstrap
 ============
 
-Template for MGB Guestbook
+http://roland-w.github.io/mgbBootstrap/
