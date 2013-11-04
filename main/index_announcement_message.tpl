@@ -1,0 +1,1 @@
+<div>{ANNOUNCEMENT_MESSAGE}</div>
