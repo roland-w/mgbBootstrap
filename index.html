@@ -14,7 +14,7 @@
 
 		<style>
 			body {
-				padding-top: 50px;
+				padding-top: 60px;
 				padding-bottom: 20px;
 			}
 		</style>
@@ -36,24 +36,26 @@
 		<div class="navbar-collapse collapse">
 		<ul class="nav navbar-nav">
 			<li class="active"><a href="#">Home</a></li>
+			<li><a href="help/get-started/">Erste Schritte</a></li>
 			<li><a href="help/css/">CSS</a></li>
-			<li><a href="help/js/">Javascript</a></li>
+			<li><a href="help/js/">JavaScript</a></li>
+			<li><a href="help/demo/">Demos</a></li>
 			<li><a href="help/fqa/">FQA</a></li>
 		</ul>
 		<ul class="nav navbar-nav pull-right">
-			<li><a href="#about">Template Version: 2.0.0</a></li>
+			<li><a href="downloads/" ><i class="fa fa-download"></i></a>
 			<li><a href="http://roland-w.github.io/mgbBootstrap/"><i class="fa fa-github"></i></a></li>
-			<li><a href="#info"><i class="fa fa-info"></i></a></li>
+			<li><a href="#" role="button" data-toggle="modal" data-target="#modalInfo"><i class="fa fa-info"></i></a></li>
 		</ul>
 			<div class="clearfix"></div>
 		</div><!--/.navbar-collapse -->
 	</div>
 	</div>
 	<div class="container">
+test text
 	<hr>
-
 		<footer>
-			<p class="pull-left">&copy; roland-w 2013</p>
+			<p class="pull-left">&copy; <a href="http://roland-w.github.io/mgbBootstrap/">roland-w 2013</a></p>
 			<p class="pull-right">v1.0</p>
 			<div class="clearfix"></div>
 		</footer>
@@ -63,5 +65,28 @@
 	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
+<!-- Modal -->
+	<div class="modal fade" id="modalInfo" tabindex="-1" role="dialog" aria-labelledby="modalInfoLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="modalInfoLabel">Über mgbBootstrap</h4>
+				</div>
+				<div class="modal-body">
+					<dl class="dl-horizontal">
+						<dt>Stabile Version:</dt>
+						<dd>1.0.0</dd>
+						<dt>Beta Version:</dt>
+						<dd>2.0.0</dd>
+						<dt>Entwickler Version:</dt>
+						<dd>2.0.0</dd>
+					</dl>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 	</body>
 </html>
