@@ -46,7 +46,7 @@
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="downloads.html" ><i class="fa fa-download"></i></a>
 			<li><a href="https://github.com/roland-w"><i class="fa fa-github"></i></a></li>
-			<li><a class="anchor" href="index.html#version" ><i class="fa fa-info"></i></a></li>
+			<li><a class="anchor" href="index.html#whatsnew" ><i class="fa fa-info"></i></a></li>
 		</ul>
 			<div class="clearfix"></div>
 		</div><!--/.navbar-collapse -->
@@ -58,19 +58,51 @@
 		</header>
 		<div class="row">
 			<div class="col-md-9">
-				<section id="download">
-					<article class="text-center">
-						
+				<section id="files">
+					<header>
+						<h3>CSS Dateien</h3>
+					</header>
+					<article>
+						<h4>./css/font-awesome.min.css</h4>
+						<p>CSS Datei für die Icon Schrifart <a href="http://fontawesome.io/">Font-Awesome</a></p>
+						<p class="text-danger">Bitte nicht ändern, da die Datei nur die Icons als CSS class zur Verfügung stellt!</p>
+						<h4>./css/<i>Template Stil</i>/bootstrap.min.css</h4>
+						<p>Die CSS Framework Datei von <a href="http://getbootstrap.com/">Bootstrap</a> und damit auch die wichtigste :).
+						</p>
+						<p>
+							Veranwortlich für das Layout, Schrift, Größe und Farben, ein verändern der Datei selber ist wegen zukünftigen Updates von <a href="http://getbootstrap.com/">Bootstrap</a> nicht zu empfehlen, um dennoch das Gästebuch an die Webseite anpassen zu können gibt es 2 Möglichkeiten.
+						</p>
+						<ol>
+							<li>Eine persönliche Datei unter <a href="http://getbootstrap.com/customize/">Bootstrap Customize</a> erstellen.</li>
+							<li>Das Überschreiben der CSS Anweisungen (bootstrap-theme), mehr dazu unter <a href="#create-style">eigenen Stil erstellen, anpassen</a>.</li>
+						</ol>
+						<h4>./css/<i>Template Stil</i>/bootstrap-theme.css</h4>
+						<p>Dient für persönliche Änderungen der bootstrap.min.css ohne die eigentliche Datei verändern zu müssen.</p>
+						<h4>./css/<i>Template Stil</i>/style.css</h4>
+						<p>Enthält nur spezielle für das Gästebuch notwendige CSS Anweisungen</p>
 					</article>
+				</section>
+				<hr>
+				<section id="create-style">
+					<header>
+						<h3>Eigenen Stil erstellen, anpassen</h3>
+					</header>
+					<article>
+						<ol>
+							<li>Erstelle einen neuen Ordner im Verzeichniss ./css/, der Name des Ordners wird später in der Administration als Stil angezeigt.</li>
+							<li>Lade von <a href="http://getbootstrap.com/">Bootstrap</a> die aktuelle Version oder stelle dir unter <a href="http://getbootstrap.com/customize/">Bootstrap Customize</a> eine persönliche Datei zusammen, enpacke die CSS Dateien in den eben erstellten Ordner.</li>
+							<li></li>
+						</ol>
+					</article>
+					<footer></footer>
 				</section>
 				<hr>
 			</div>
 			<div class="col-md-3">
 				<nav class="mainnav">
 					<ul class="nav nav-pills nav-stacked">
-						<li><a href="#download">Download</a></li>
-						<li><a href="#whatsnew">Was ist neu?</a></li>
-						<li><a href="#whatsnew"></a></li>
+						<li><a href="#files">Dateien</a></li>
+						<li><a href="#create-style">Eigenen Stil erstellen, anpassen</a></li>
 					</ul>
 				</nav>
 			</div>
