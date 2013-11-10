@@ -28,10 +28,10 @@
 	// of the mgb-default theme "mgbModern".
 
 	/*
-	 * mbg html5 Template
+	 * mgbBootstrap Template
 	 * @author RW
 	 * 
-	 * @version 1.0 
+	 * @version 2.0 
 	 * 
 	 * @package MGB 0.7
 	 */
@@ -41,7 +41,7 @@
 
 	$template['name'] = "mgbBootstrap";
 	$template['version'] = "2.0.0";
-	$template['author'] = "Roland Wassinger";
+	$template['author'] = "Roland-W";
 	$template['default_style'] = "default";
 	$template['default_iconset'] = "default";
 	$template['doctype'] = "html5";
