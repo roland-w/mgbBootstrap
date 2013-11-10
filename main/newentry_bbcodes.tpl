@@ -1,12 +1,12 @@
 				<div class="bbcodes">
 					<div class="btn-toolbar">
 						<div class="btn-group">
-							<button class="btn btn-default btn-group-sm" type="button" title="{LANG_BBCODE_HELP_BOLD}" onClick="insert('[b]', '[/b]');"><i class="icon-bold"></i></button>
-							<button class="btn btn-default btn-group-sm" type="button" title="{LANG_BBCODE_HELP_ITALIC}" onClick="insert('[i]', '[/i]')"><i class="icon-italic"></i></button>
-							<button class="btn btn-default btn-group-sm" type="button" title="{LANG_BBCODE_HELP_QUOTE}" onClick="insert('[quote]', '[/quote]')"><i class="icon-quote-left"></i></button>
+							<button class="btn btn-default btn-group-sm" type="button" title="{LANG_BBCODE_HELP_BOLD}" onClick="insert('[b]', '[/b]');"><i class="fa fa-bold"></i></button>
+							<button class="btn btn-default btn-group-sm" type="button" title="{LANG_BBCODE_HELP_ITALIC}" onClick="insert('[i]', '[/i]')"><i class="fa fa-italic"></i></button>
+							<button class="btn btn-default btn-group-sm" type="button" title="{LANG_BBCODE_HELP_QUOTE}" onClick="insert('[quote]', '[/quote]')"><i class="fa fa-quote-left"></i></button>
 						</div>
 						<div class="btn-group">
-							<button class="btn btn-default btn-group-sm" type="button" title="{LANG_BBCODE_HELP_URL}" onClick="insert('[url]', '[/url]')"><i class="icon-link"></i></button>
+							<button class="btn btn-default btn-group-sm" type="button" title="{LANG_BBCODE_HELP_URL}" onClick="insert('[url]', '[/url]')"><i class="fa fa-link"></i></button>
 {TEMPLATE_BBCODE_IMG}
 {TEMPLATE_BBCODE_FLASH}
 						</div>

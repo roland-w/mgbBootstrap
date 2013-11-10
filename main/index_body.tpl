@@ -7,7 +7,7 @@
 			<div class="announcement">
 			{TEMPLATE_ANNOUNCEMENT_MESSAGE}
 			</div>
-			<div class="text-center">
+			<div class="text-center hidden-print">
 				<ul class="list-inline">
 					<li><a href="newentry.php{PARAMLANG_A}" title="{LANG_NEW_ENTRY_DESCR}"><i class="fa fa-pencil"></i> {LANG_NEW_ENTRY}</a><li>
 					<li><a href="email.php?id=admin{PARAMLANG_B}" title="{LANG_CONTACT_DESCR}"><i class="fa fa-envelope"></i> {LANG_CONTACT}</a></li>

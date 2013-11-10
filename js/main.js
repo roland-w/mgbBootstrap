@@ -24,13 +24,16 @@ var MGB_Message = new Object();
 			time: 500, //ms or 0
 			onload:true, // or false
 		},
-		debug: false,
+		style:{
+			iframe:true,//or false
+		},
 	};
 	
 	MGB_Message = {
 		error:{
 			mgb_message_empty: 'Message is empty!',
 			mgb_message_type_error : 'Message Type is undefined',
+			mgb_message_language_file_not_found:'Language File not Found',
 		},
 		cookie:{
 			mgb_cookieEnabled:'To use this guest book, your browser must accept cookies!',
@@ -41,11 +44,14 @@ var MGB_Message = new Object();
 
 
 /* Please change anything from here */
-var lang = $('html').attr('lang');
+
 var mgb;
 /* Document ready */
 jQuery(function(){
+	
 	mgb = new MGB();
+	//mgb.loadLanguage($('html').attr('lang'));
+	
 	/*Cookie check*/
 	if(!navigator.cookieEnabled && MGB_Settings.cookieCheck){
 		jQuery(window).MGB_Messages({
@@ -64,32 +70,29 @@ jQuery(function(){
 				window.parent.postMessage(['setHeight', $('html').height()], '*');
 			}
 		}
+		/* Set body background color :transparent, Margin top and bootom :0 */
+		if(MGB_Settings.style.iframe){
+			jQuery('body').css({'background-color':'transparent'});
+			jQuery('div.container.container-main').css({'margin-top':0,'margin-bottom':0});
+		}
+	}else{
+		//if not a frame!
 	}
-		
-
-	
-	//if frame?
-	//if(top === self){
-		// if not a frame, view Bootstrap Tooltip
 		if(MGB_Settings.tooltip.enable){
-			jQuery('a, img, button, input[type=image]').tooltip({
+			jQuery('a, img, button, input[type=image], textarea').tooltip({
 				container: $('body')
 			});
-	//	}
-	}
+		}
 	
 });
 /* MGB */
 	MGB = function(options) {this.init(options)}
 	MGB.prototype = {
-		_defaults:{
-			
-		},
+		_defaults:{},
 		init:function(){
-			jQuery.extend(this.options, this._default);
-			
-			
+			jQuery.extend(this.options, this._default);	
 		},
+		loadLanguage:function(lang){}
 	};
 /* Functionen */
 		/* Call by new Message from parent Window */
@@ -97,9 +100,7 @@ jQuery(function(){
 			var eventName = e.data[0];
 			var data = e.data[1];
 			
-			switch(eventName){
-				
-			}
+			//switch(eventName){}
 		};
 		function mgb_resize(){
 			window.parent.postMessage(['setHeight', $('html').height()], '*');

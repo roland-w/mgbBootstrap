@@ -9,23 +9,11 @@
 	Require: Bootstrap V 3
 	@link http://getbootstrap.com/
 	*/
-	
-/*
-    do not remove the next line
-*/
-@import url('../main.css');
-
-body {
-	background-color: #EBEBEB;
-}
-
-div.container.container-main {
-	background-color: #fff;
-}
-
+/* Colors */
 div.entry {
 	border: #eee solid 1px;
 	box-shadow: 4px 4px 10px #ddd;
+	background-color:#fff;
 }
 
 div.messages_header {
