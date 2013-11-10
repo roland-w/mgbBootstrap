@@ -1,0 +1,1 @@
+<button class="btn btn-default btn-small" type="button" onClick="insert('[img]', '[/img]')" title="{LANG_BBCODE_HELP_IMG}"><i class="fa fa-pencil"></i></button>

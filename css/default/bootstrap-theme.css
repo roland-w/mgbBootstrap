@@ -1,0 +1,19 @@
+/* 
+    Document   : bootstrap-theme.css
+    Created on : 27.05.2013, 16:31:01
+    Author     : RW
+    Description:
+	Main CSS File for MGB Bootstrap Template. 
+	Style Responsive
+	
+	Require: Bootstrap V 3
+	@link http://getbootstrap.com/
+	*/
+	
+	/*override bootstrap.min.css*/
+	body{
+		background-color:#eee;
+	}
+	div.container{
+		background-color:#fff;
+	}

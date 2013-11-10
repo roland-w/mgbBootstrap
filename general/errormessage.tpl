@@ -1,0 +1,1 @@
+			<div class="alert alert-block alert-danger text-center">{ERRORMESSAGE}</div>
