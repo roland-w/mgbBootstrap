@@ -3,6 +3,7 @@
 				<header>
 					<h2 class="text-center">{TITLE}</h2>
 				</header>
+				<div id="message"></div>
 				<div class="text-center">
 					<ul class="list-inline">
 						<li><a href="index.php{PARAMLANG_A}" title="{LANG_BACK}"><i class="fa fa-home"></i> {LANG_BACK_TO_MAINPAGE}</a><li>
