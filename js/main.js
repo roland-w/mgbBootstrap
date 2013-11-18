@@ -16,24 +16,24 @@ var MGB_Message = new Object();
 /* Settings */
 	MGB_Settings = {
 		tooltip:{
-			enable: true, //or false
+			enable: true //or false
 		},
 		cookieCheck : true, //or false
 		postMessage:{
 			resize:true,//or false
 			time: 500, //ms or 0
-			onload:true, // or false
+			onload:true // or false
 		},
 		style:{
-			iframe:true,//or false
-		},
+			iframe:true//or false
+		}
 	};
 	
 	MGB_Message = {
 		error:{
 			mgb_message_empty: 'Message is empty!',
 			mgb_message_type_error : 'Message Type is undefined',
-			mgb_message_language_file_not_found:'Language File not Found',
+			mgb_message_language_file_not_found:'Language File not Found'
 		},
 		cookie:{
 			mgb_cookieEnabled:'To use this guest book, your browser must accept cookies!',
@@ -50,7 +50,7 @@ var mgb;
 jQuery(function(){
 	
 	mgb = new MGB();
-	//mgb.loadLanguage($('html').attr('lang'));
+	/*mgb.loadLanguage($('html').attr('lang'));*/
 	
 	/*Cookie check*/
 	if(!navigator.cookieEnabled && MGB_Settings.cookieCheck){
@@ -86,7 +86,7 @@ jQuery(function(){
 	
 });
 /* MGB */
-	MGB = function(options) {this.init(options)}
+	MGB = function(options) {this.init(options)};
 	MGB.prototype = {
 		_defaults:{},
 		init:function(){
@@ -100,7 +100,7 @@ jQuery(function(){
 			var eventName = e.data[0];
 			var data = e.data[1];
 			
-			//switch(eventName){}
+			/*switch(eventName){}*/
 		};
 		function mgb_resize(){
 			window.parent.postMessage(['setHeight', $('html').height()], '*');
@@ -119,7 +119,7 @@ jQuery(function(){
 			message:	'',
 			'class':	'alert-danger',
 			close:		true,
-			type:		null,
+			type:		null
 		},
 		
 		init: function() {
@@ -139,7 +139,7 @@ jQuery(function(){
 			}else if(this.config.type === 'alert'){
 				alert(this.config.message);
 			}else{
-				jQuery.error('MGB_Messages:' + MGB_Message.error.mgb_message_type_error)
+				jQuery.error('MGB_Messages:' + MGB_Message.error.mgb_message_type_error);
 			}
 			return this;
 		},
@@ -153,7 +153,7 @@ jQuery(function(){
 			this._content = jQuery('<div>').html(this.config.message).appendTo(this._container);
 			return this._container;
 		}
-	}	
+	};
 
 	MGB_Messages.defaults = MGB_Messages.prototype.defaults;
 	
@@ -166,7 +166,7 @@ jQuery(function(){
 	window.MGB_Messages = MGB_Messages;
 	})(window, jQuery);
 /*and more...*/
-		// Listener for all Browser
+		/* Listener for all Browser*/
 		if (window.addEventListener){
 			window.addEventListener("message", mgb_listener, false);
 		} else {
