@@ -1,1 +1,1 @@
-<div class="comment"><strong><i class="icon-comment" ></i> {LANG_COMMENT}:</strong>&nbsp;{ENTRY_COMMENT}</div>
+<div class="comment"><strong><i class="fa fa-comment" ></i> {LANG_COMMENT}:</strong>&nbsp;{ENTRY_COMMENT}</div>
