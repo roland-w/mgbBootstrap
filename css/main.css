@@ -81,3 +81,7 @@ div.form-group-select > div select{
 	margin-left: -15px;
 	margin-bottom: 5px;
 }
+div.box-pagination{
+	margin-top:10px;
+	margin-bottom:10px;
+}
