@@ -6,7 +6,7 @@
 				<div id="message"></div>
 				<div class="text-center">
 					<ul class="list-inline">
-						<li><a href="index.php{PARAMLANG_A}" title="{LANG_BACK}"><i class="fa fa-home"></i> {LANG_BACK_TO_MAINPAGE}</a><li>
+						<li><a href="index.php{PARAMLANG_A}" title="{LANG_BACK}"><i class="fa fa-home"></i>&nbsp;{LANG_BACK_TO_MAINPAGE}</a><li>
 					</ul>
 					<hr>
 				</div>
